@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Friday</title>
+    <link rel="icon" href="favicon-32x32.png" type="image/png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome para os ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body style="background-color: #f0f0f0;">
+
+    <div class="container my-4">
+        <!-- Campo de Pesquisa com Ícone de Lupa -->
+        <div class="input-group mb-3">
+            <input type="text" id="search" class="form-control" placeholder="Pesquisar produtos...">
+
+    <!-- Combobox para ordenação -->
+    <select id="sortBy" class="form-control">
+        <option value="" selected>Ordenar por...</option>
+        <option value="nome-asc">Nome (A-Z)</option>
+        <option value="nome-desc">Nome (Z-A)</option>
+        <option value="preco-asc">Preço (Crescente)</option>
+        <option value="preco-desc">Preço (Decrescente)</option>
+    </select>
+
+    <!-- Botão de pesquisa -->
+    <div class="input-group-append">
+        <button id="searchButton" class="btn btn-primary" type="button">Buscar</button>
+    </div>
+</div>
+
+        <!-- Listagem de Produtos -->
+        <div id="product-list" class="row"></div>
+
+        <!-- Contador de Produtos -->
+        <div id="product-count" class="text-center mt-4">
+            Total de produtos exibidos: 0
+        </div>
+    </div>
+
+    <script src="lista.js"></script>
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
